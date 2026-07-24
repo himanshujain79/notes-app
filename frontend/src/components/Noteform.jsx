@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import { toast } from "react-toastify";
-import "./NoteForm.css";
+import "./Noteform.css";
 
 function NoteForm({addNote ,editingNote,
   setEditingNote,handleUpdate}){
