@@ -1,4 +1,4 @@
-import "./NoteList.css";
+import "./Notelist.css";
 
 
 function NoteList({ notes,onDelete,onEdit }) {
