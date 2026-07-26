@@ -44,6 +44,8 @@ function NoteForm({addNote ,editingNote,
 
     return(
         <div className="note-form">
+             <h2>{editingNote ? "Edit Note" : "Add New Note"}</h2>
+
             <input type="text" placeholder="Enter note title" value={title}  onChange={(e) => setTitle(e.target.value)}/>
 
             <br/><br/>
@@ -51,12 +53,12 @@ function NoteForm({addNote ,editingNote,
             <textarea placeholder="Write your note..."  value={content}  onChange={(e) => setContent(e.target.value)}> </textarea>
             <br/><br/>
           <div className="form-buttons">
-             <button onClick={handleSubmit}>
+             <button className="save-btn" onClick={handleSubmit}>
              {editingNote ? "Update Note" : "Add Note"}
              </button>
 
              {editingNote && (
-             <button onClick={handleCancel}>
+             <button className="cancel-btn" onClick={handleCancel}>
              Cancel
              </button>
              )}

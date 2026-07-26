@@ -83,8 +83,10 @@ const filteredNotes = notes.filter((note) =>
     note.content.toLowerCase().includes(search.toLowerCase())
 );
   return (
+<>
+     <Navbar title="Welcome to NoteLet" />
     <div className="container">
-    <Navbar title="Welcome to NoteLet" />
+   
     <NoteForm
   addNote={addNote}
   editingNote={editingNote}
@@ -106,8 +108,10 @@ const filteredNotes = notes.filter((note) =>
   onDelete={handleDelete}
   onEdit={setEditingNote}
 />
-    <Footer/>
+    
     </div>
+<Footer/>
+    </>
   );
 }
 

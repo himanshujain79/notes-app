@@ -5,7 +5,7 @@ function NoteList({ notes,onDelete,onEdit }) {
     if (notes.length === 0) {
     return (
       <div className="empty-state">
-        <h2>📝 No Notes Found</h2>
+        <h2 style={{margin: 15}}>📝 No Notes Found</h2>
         <p>Create your first note or try another search.</p>
       </div>
     );
